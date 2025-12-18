@@ -1,0 +1,26 @@
+.videos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video-preview-container {
+  width: 90%;
+  margin: auto;
+}
+
+.video-thumbnail {
+  width: 100%
+}
+
+.video-details-container { 
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-icon {
+  width: 50px;
+}
+
+.video-text-container {
+  flex: 1;
+}
