@@ -1,10 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
 .videos-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
 }
 
 .video-preview-container {
-  width: 410px;
+  width: 100%;
   margin: auto;
 }
 
@@ -20,7 +39,7 @@
 }
 
 .channel-icon-container {
-  width: 35px;
+  width: 37px;
 }
 
 .channel-icon {
@@ -33,21 +52,50 @@
   margin: 0 10px;
 }
 
-.video-text-container p {
+.video-text-container p, .video-text-container h3,  .video-text-container span{
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   margin: 0;
 }
 
 .video-title {
+  font-size: 11.7px;
   color: black;
-  font-weight: 500;
-  line-height: 1.5;
 }
 
-.channel-name, .video-stats {
-  color: rgb(96, 96, 96);
-  font-size: .9em;
+.video-title a {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  max-height: 4.4rem;
+
+  /* Was playing arround with how youtube actually handles video title wrapping just to understand it but for now I don't actually need it. */
+  /* display: box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis; */
+}
+
+.video-title span {
+  /* Was playing arround with how youtube actually handles video title wrapping just to understand it but for now I don't actually need it. */
+  white-space: pre-wrap;
+}
+
+.channel-name, .video-stats { 
+  margin-top: 2px;
+  overflow: hidden;
+}
+
+.channel-name span, .video-stats span {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #606060;
 }
 
 .video-details-container > .icon-container {
