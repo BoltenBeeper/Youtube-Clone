@@ -1,0 +1,355 @@
+/* Styles originally by BoltenBeeper (Riley Underwood) on CodePen*/
+
+.icon {
+  cursor: pointer;
+}
+
+/* vvv THREE DOTS vvv */
+
+.three-dot.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: grey; /* Change this too, self explanitory */
+}
+
+.three-dot.icon {
+  width: calc(var(--icon-size) * var(--unit));
+  height: calc(var(--icon-size) * var(--unit));
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.in-icon-dot {
+  width: calc((var(--icon-size) / 5) * var(--unit));
+  height: calc((var(--icon-size) / 5) * var(--unit));
+  border-radius: 100%;
+  background-color: var(--icon-color);
+}
+
+.three-dot.icon:hover {
+  transform: rotate(180deg);
+  transition: transform ease-in-out .2s;
+}
+
+/* ^^^ THREE DOTS ^^^ */
+
+/* vvv HAMBURGER vvv */
+
+.hamburger.icon {
+  width: calc(var(--icon-size) * var(--unit));
+  height: calc(var(--icon-size) * var(--unit));
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  position: relative;
+}
+
+.in-icon-slice {
+  position: absolute;
+  
+  width: calc((var(--icon-size) / 1.5) * var(--unit));
+  height: calc((var(--icon-size) / 15) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+/*   transition: background-color ease-in-out 1s 1s; */
+}
+
+.in-icon-slice.one {
+  translate: 0 calc(((var(--icon-size) / -1.668) + (var(--icon-size) / 1.5) / 2) * var(--unit));
+}
+
+.in-icon-slice.three {
+  translate: 0 calc(((var(--icon-size) / 1.668) + ((var(--icon-size) / 1.5) / 2) * -1) * var(--unit));
+}
+
+.in-icon-slice.four {
+  translate: 0 calc(((var(--icon-size) / -1.3) + (var(--icon-size) / 1.5) / 2) * var(--unit));
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hamburger.icon:hover .in-icon-slice.one {
+  translate: 0 0;
+  transition: all, ease, .2s 0s;
+}
+
+
+.hamburger.icon:hover .in-icon-slice.two {
+  translate: 0 calc(((var(--icon-size) / 1.668) + ((var(--icon-size) / 1.5) / 2) * -1) * var(--unit));
+  transition: all, ease, .2s 0s;
+}
+
+.hamburger.icon:hover .in-icon-slice.three {
+  translate: 0 calc(((var(--icon-size) / 1.3) + ((var(--icon-size) / 1.5) / 2) * -1) * var(--unit));
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease .2s 0s;
+}
+
+.hamburger.icon:hover .in-icon-slice.four {
+  background-color: var(--icon-color);
+  translate: 0 calc(((var(--icon-size) / -1.668) + (var(--icon-size) / 1.5) / 2) * var(--unit));
+  transition: all ease .2s 0s;
+}
+
+/* ^^^ HAMBURGER ^^^ */
+
+/* vvv HOME vvv */
+
+.home.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: grey; /* Change this too, self explanitory */
+}
+
+.home.icon {
+  width: calc(var(--icon-size) * var(--unit));
+  height: calc(var(--icon-size) * var(--unit));
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  position: relative;
+}
+
+.home .in-icon-piece {
+  position: absolute;
+}
+
+.home .in-icon-roof {
+  --roof-piece-length: calc(var(--icon-size) / 2);
+  --b: calc(sin(45deg) * var(--roof-piece-length));
+  width: calc(var(--roof-piece-length) * var(--unit));
+  height: calc((var(--icon-size) / 15) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-roof.one {
+  transform: rotate(-45deg);
+  translate: calc(((var(--icon-size) / -3.02) + (var(--b) / 2)) * var(--unit)) calc(((var(--icon-size) / -3.02) + (var(--b) / 2)) * var(--unit));
+}
+
+.home .in-icon-roof.two {
+  transform: rotate(45deg);
+  translate: calc(((var(--icon-size) / 3.02) + (var(--b) / 2) * -1) * var(--unit)) calc(((var(--icon-size) / -3.02) + (var(--b) / 2)) * var(--unit));
+}
+
+.home .in-icon-wall {
+  --wall-piece-width: calc(var(--icon-size) / 15);
+  --wall-piece-length: calc(var(--icon-size) / 2);
+  width: calc(var(--wall-piece-width) * var(--unit));
+  height: calc(var(--wall-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-wall.three {
+  translate: calc(((var(--icon-size) / -3.5) + var(--wall-piece-width)) * var(--unit)) calc(((var(--icon-size) / -9) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-wall.four {
+  translate: calc(((var(--icon-size) / 3.5) + var(--wall-piece-width) * -1) * var(--unit)) calc(((var(--icon-size) / -9) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-floor {
+  --floor-piece-width: calc(var(--icon-size) / 5);
+  --floor-piece-length: calc(var(--icon-size) / 15);
+  width: calc(var(--floor-piece-width) * var(--unit));
+  height: calc(var(--floor-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-floor.five {
+  translate: calc(((var(--icon-size) / -4.7) + var(--floor-piece-length)) * var(--unit)) calc(((var(--icon-size) / 3.05) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-floor.six {
+  translate: calc(((var(--icon-size) / 4.7) + var(--floor-piece-length) * -1) * var(--unit)) calc(((var(--icon-size) / 3.05) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-wall-inner {
+  --wall-piece-width: calc(var(--icon-size) / 15);
+  --wall-piece-length: calc(var(--icon-size) / 3.9);
+  width: calc(var(--wall-piece-width) * var(--unit));
+  height: calc(var(--wall-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-wall-inner.seven {
+  translate: calc(((var(--icon-size) / -7) + var(--wall-piece-width)) * var(--unit)) calc(((var(--icon-size) / 7.6) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-wall-inner.eight {
+  translate: calc(((var(--icon-size) / 7) + var(--wall-piece-width) * -1) * var(--unit)) calc(((var(--icon-size) / 7.6) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-floor-inner {
+  --floor-piece-width: calc(var(--icon-size) / 4.8);
+  --floor-piece-length: calc(var(--icon-size) / 15);
+  width: calc(var(--floor-piece-width) * var(--unit));
+  height: calc(var(--floor-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-floor-inner.nine {
+  translate: 0 calc(((var(--icon-size) / 8) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.home .in-icon-door {
+  --floor-piece-width: calc(var(--icon-size) / 6.5);
+  --floor-piece-length: calc(var(--icon-size) / 4.15);
+  width: calc(var(--floor-piece-width) * var(--unit));
+  height: calc(var(--floor-piece-length) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.home .in-icon-door.ten {
+  translate: 0 calc(((var(--icon-size) / 6.5) + (var(--floor-piece-length) / 2)) * var(--unit));
+  transition: background-color linear .2s;
+}
+
+.home.icon-container:hover .in-icon-door.ten {
+  background-color: rgb(0, 0, 0, 0);
+  transition: background-color linear .2s;
+}
+
+/* ^^^ HOME ^^^ */
+
+/* vvv ARROW vvv */
+
+.arrow.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: lightgrey; /* Change this too, self explanitory */
+}
+
+.arrow.icon {
+  width: calc(var(--icon-size) * var(--unit));
+  height: calc(var(--icon-size) * var(--unit));
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  position: relative;
+}
+
+.inside-arrow-container {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(12% 50%, 44% 18%, 44% 37%, 87% 37%, 87% 62%, 44% 62%, 44% 82%);
+  transform: rotate(90deg);
+}
+
+.inside-arrow-swipe {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 0) 0%, var(--icon-color) 50%, rgba(0, 212, 255, 0) 100%);
+/*   width: calc(var(--icon-size) / 15);
+  height: calc(var(--icon-size) / 2.05); */
+  position: absolute;
+  translate: 100%;
+}
+
+.arrow.icon:hover .inside-arrow-swipe {
+  translate: -100%;
+  transition: translate ease .5s
+}
+
+.arrow .in-icon-piece {
+  position: absolute;
+}
+
+.arrow .in-icon-piece.one, .arrow .in-icon-piece.two { /* Arrow tip */
+  --roof-piece-length: calc(var(--icon-size) / 2);
+  --b: calc(sin(45deg) * var(--roof-piece-length));
+  width: calc(var(--roof-piece-length) * var(--unit));
+  height: calc((var(--icon-size) / 15) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.arrow .in-icon-piece.one {
+  transform: rotate(-45deg);
+  translate: calc(((var(--icon-size) / -3.02) + (var(--b) / 2)) * var(--unit)) calc(((var(--icon-size) / -2.5) + (var(--b) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.two {
+  transform: rotate(45deg);
+  translate: calc(((var(--icon-size) / 3.02) + (var(--b) / 2) * -1) * var(--unit)) calc(((var(--icon-size) / -2.5) + (var(--b) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.three, .arrow .in-icon-piece.four { /* Arrow sides */
+  --wall-piece-width: calc(var(--icon-size) / 15);
+  --wall-piece-length: calc(var(--icon-size) / 2.05);
+  width: calc(var(--wall-piece-width) * var(--unit));
+  height: calc(var(--wall-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.arrow .in-icon-piece.three {
+  translate: calc(((var(--icon-size) / -5.4) + var(--wall-piece-width)) * var(--unit)) calc(((var(--icon-size) / -11) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.four {
+  translate: calc(((var(--icon-size) / 5.4) + var(--wall-piece-width) * -1) * var(--unit)) calc(((var(--icon-size) / -11) + (var(--wall-piece-length) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.five, .arrow .in-icon-piece.six { /* Arrow tip bottom lines */
+  --floor-piece-width: calc(var(--icon-size) / 4);
+  --floor-piece-length: calc(var(--icon-size) / 15);
+  width: calc(var(--floor-piece-width) * var(--unit));
+  height: calc(var(--floor-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.arrow .in-icon-piece.five {
+  translate: calc(((var(--icon-size) / -3.5) + var(--floor-piece-length)) * var(--unit)) calc(((var(--icon-size) / -10.5) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.six {
+  translate: calc(((var(--icon-size) / 3.5) + var(--floor-piece-length) * -1) * var(--unit)) calc(((var(--icon-size) / -10.5) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.arrow .in-icon-piece.seven { /* Arrow bottom */
+  --floor-piece-width: calc(var(--icon-size) / 3.4);
+  --floor-piece-length: calc(var(--icon-size) / 15);
+  width: calc(var(--floor-piece-width) * var(--unit));
+  height: calc(var(--floor-piece-length) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+}
+
+.arrow .in-icon-piece.seven {
+  translate: 0 calc(((var(--icon-size) / 3.01) + (var(--floor-piece-length) / 2)) * var(--unit));
+}
+
+.arrow.icon.right {
+  transform: rotate(90deg);
+}
+
+.arrow.icon.down {
+  transform: rotate(180deg);
+}
+
+.arrow.icon.left {
+  transform: rotate(270deg);
+}
+
+/* ^^^ ARROW ^^^ */

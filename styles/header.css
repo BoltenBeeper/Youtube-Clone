@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* All sections */
+
+.left.section {
+  /* background-color: pink; */
+  width: 200px;
+}
+
+.search.section {
+  flex: 1;
+  display: flex;
+  /* background-color: lightblue; */
+  max-width: 500px;
+}
+
+.right.section {
+  /* background-color: pink; */
+}
+
+/* Left section */
+
+.hamburger.icon-container {
+  padding: 10px;
+  margin: 0 8px;
+  border-radius: 100%;
+}
+
+.hamburger.icon {
+  --icon-size: 28; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1px; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: black; /* Change this too, self explanitory */
+}
+
+.hamburger.icon-container:hover {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.header .logo-container {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.header .youtube-logo {
+  width: 100%;
+}
+
+/* Search section */
+
+.search-bar {
+  flex: 1;
+  height: 35px;
+  border: solid 1px grey;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-button-container {
+  display: flex;
+  width: 50px;
+  height: 35px;
+  margin-left: -1px;
+
+  background-color: rgba(211, 211, 211, .3);
+  border: solid 1px grey;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  place-content: center;
+  place-items: center;
+}
+
+.search-button-container:hover {
+  background-color: rgba(211, 211, 211, .5);
+}
+
+.search-button {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  object-fit: contain;
+}

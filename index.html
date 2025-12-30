@@ -8,13 +8,49 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="video_layout.css"></link>
+	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/animated_icons.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/video_layout.css">
 </head>
 
 <body>
+	<div class="header">
+
+		<div class="left section">
+			<div class="hamburger icon-container">
+				<div class="hamburger icon">
+					<div class="in-icon-slice one"></div>
+					<div class="in-icon-slice two"></div>
+					<div class="in-icon-slice three"></div>
+					<div class="in-icon-slice four"></div>
+				</div>
+			</div>
+
+			<div class="logo-container">
+				<img class="youtube-logo" src="images/Youtube_Logo.png" alt="YOUTUBE">
+			</div>
+
+		</div> <!-- End of left-section -->
+
+		<div class="search section">
+			<input class="search-bar" type="text" placeholder="Search">
+			<div class="search-button-container">
+				<img class="search-button" src="https://cdn.iconscout.com/icon/free/png-256/free-search-icon-svg-download-png-1604561.png" alt="Search">
+			</div>
+			<div class="voice-search-button-container">
+				<img class="voice-search-button" src="images/voice-search-icon.svg" alt="voice search">
+			</div>
+		</div> <!-- End of search section -->
+
+		<div class="right section"></div> <!-- End of right section -->
+
+	</div> <!-- End of header -->
+
 	<div class="videos-container">
 
 		<div class="video-preview-container">
+			<div class="highlight"></div>
 			<img class="video-thumbnail"
 				src="https://i.ytimg.com/vi/oUN7GiviV44/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0-DNhsEZ_3pAJ9Tp3SsonPUwssw">
 			<div class="video-details-container">
@@ -34,7 +70,9 @@
 							<a href="#">The Game Theorists &#10003</a>
 						</span>
 					</div>
-					<p class="video-stats">766K views &#183; 1 day ago</p>
+					<div class="video-stats">
+					</div>
+					<!-- <p class="video-stats">766K views &#183; 1 day ago</p> -->
 				</div>
 				<div class="icon-container">
 					<img src="https://cdn-icons-png.flaticon.com/512/7066/7066144.png" alt="{three dots icon}">
@@ -42,7 +80,70 @@
 			</div>
 		</div>
 
-	</div>	
+		<div class="video-preview-container">
+			<div class="highlight"></div>
+			<img class="video-thumbnail"
+				src="https://i.ytimg.com/vi/oUN7GiviV44/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0-DNhsEZ_3pAJ9Tp3SsonPUwssw">
+			<div class="video-details-container">
+				<div class="channel-icon-container">
+					<img class="channel-icon"
+						src="https://yt3.ggpht.com/NQB2LfIzLAxxUASSgYDLFNFOsZkBsoG2a9o69cl8rANnJou_qS176-MVflNuULV9LOD00oBa8Q=s68-c-k-c0x00ffffff-no-rj"
+						>
+				</div>
+				<div class="video-text-container">
+					<h3 class="video-title">
+						<a href="#">
+							<span>Game Theory: FNAF, What's ACTUALLY in the Box?</span>
+						</a>
+					</h3>
+					<div class="channel-name">
+						<span>
+							<a href="#">The Game Theorists &#10003</a>
+						</span>
+					</div>
+					<div class="video-stats">
+					</div>
+					<!-- <p class="video-stats">766K views &#183; 1 day ago</p> -->
+				</div>
+				<div class="icon-container">
+					<img src="https://cdn-icons-png.flaticon.com/512/7066/7066144.png" alt="{three dots icon}">
+				</div>
+			</div>
+		</div>
+
+		<div class="video-preview-container">
+			<div class="highlight"></div>
+			<img class="video-thumbnail"
+				src="https://i.ytimg.com/vi/oUN7GiviV44/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0-DNhsEZ_3pAJ9Tp3SsonPUwssw">
+			<div class="video-details-container">
+				<div class="channel-icon-container">
+					<img class="channel-icon"
+						src="https://yt3.ggpht.com/NQB2LfIzLAxxUASSgYDLFNFOsZkBsoG2a9o69cl8rANnJou_qS176-MVflNuULV9LOD00oBa8Q=s68-c-k-c0x00ffffff-no-rj"
+						>
+				</div>
+				<div class="video-text-container">
+					<h3 class="video-title">
+						<a href="#">
+							<span>Game Theory: FNAF, What's ACTUALLY in the Box?</span>
+						</a>
+					</h3>
+					<div class="channel-name">
+						<span>
+							<a href="#">The Game Theorists &#10003</a>
+						</span>
+					</div>
+					<div class="video-stats">
+					</div>
+					<!-- <p class="video-stats">766K views &#183; 1 day ago</p> -->
+				</div>
+				<div class="icon-container">
+					<img src="https://cdn-icons-png.flaticon.com/512/7066/7066144.png" alt="{three dots icon}">
+				</div>
+			</div>
+		</div>
+
+	</div>	<!-- End of videos-container -->
+
 </body>
 
 </html>
