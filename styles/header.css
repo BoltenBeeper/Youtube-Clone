@@ -32,7 +32,7 @@
 /* Left section */
 
 .hamburger.icon-container {
-  padding: 10px;
+  padding: 7px;
   margin: 0 8px;
   border-radius: 100%;
 }
@@ -41,6 +41,7 @@
   --icon-size: 28; /* Change this value to change entire icon size scalably (square) */
   --unit: 1px; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
   --icon-color: black; /* Change this too, self explanitory */
+  border-radius: calc(var(--icon-size) * var(--unit));
 }
 
 .hamburger.icon-container:hover {
@@ -61,19 +62,20 @@
 .search-bar {
   flex: 1;
   height: 35px;
-  border: solid 1px grey;
+  border: solid 1px #c6c6c6;
+  border-right: 0;
   border-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  box-shadow: inset 0px 1px 2px #eee; /* rgba(150, 150, 150, .3) */
 }
 
 .search-button-container {
   display: flex;
   width: 50px;
   height: 35px;
-  margin-left: -1px;
 
-  background-color: rgba(211, 211, 211, .3);
+  background-color: rgba(211, 211, 211, .2);
   border: solid 1px grey;
   border-radius: 20px;
   border-top-left-radius: 0;
