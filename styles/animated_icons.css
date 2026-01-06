@@ -230,13 +230,6 @@
 /* vvv ARROW vvv */
 
 .arrow.icon {
-  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
-  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
-  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
-  --icon-color: lightgrey; /* Change this too, self explanitory */
-}
-
-.arrow.icon {
   width: calc(var(--icon-size) * var(--unit));
   height: calc(var(--icon-size) * var(--unit));
   
