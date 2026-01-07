@@ -133,9 +133,16 @@
 ul.catagories {
   display: flex;
   width: 100%;
+
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-height: none;
+}
+
+.catagories-container::-webkit-scrollbar {
+  display: none;
 }
 
 li.catagory {
