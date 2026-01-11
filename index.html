@@ -86,7 +86,7 @@
 
 	<div class="catagories-container">
 
-		<div class="arrow icon-container left">
+		<div class="arrow icon-container left" onclick="scrollByAmount(-100, 'catagories')">
 			<div class="arrow icon left">
 				<div class="inside-arrow-container">
 					<div class="inside-arrow-swipe"></div>
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 
-		<ul class="catagories">
+		<ul class="catagories" id="catagories">
 			<li class="catagory">All</li>
 			<li class="catagory">Gaming</li>
 			<li class="catagory">Video game development</li>
@@ -115,7 +115,7 @@
 			<li class="catagory">Nintendo</li>
 		</ul>
 		
-		<div class="arrow icon-container right">
+		<div class="arrow icon-container right" onclick="scrollByAmount(100, 'catagories')">
 			<div class="arrow icon right">
 				<div class="inside-arrow-container">
 					<div class="inside-arrow-swipe"></div>
@@ -233,5 +233,7 @@
 	</div>	<!-- End of videos-container -->
 
 </body>
+
+<script src="/scripts/catagory_scroll.js"></script>
 
 </html>

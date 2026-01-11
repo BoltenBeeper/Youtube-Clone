@@ -138,7 +138,7 @@ ul.catagories {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-  scrollbar-height: none;
+  scrollbar-width: none;
 }
 
 .catagories-container::-webkit-scrollbar {
@@ -164,7 +164,7 @@ li.catagory {
 }
 
 .arrow.icon-container.left {
-  display: none;
+  /* display: none; */
   position: absolute;
   left: 15px;
 }
