@@ -126,8 +126,9 @@
   right: 0;
   z-index: 1000;
 
-  height: 60px;
-  padding: 0 24px;
+  height: 64px;
+  margin-left: 80px;
+  padding: 0 26px;
 }
 
 ul.catagories {
@@ -155,16 +156,21 @@ li.catagory {
 
   color: #0f0f0f;
   background-color: rgba(0, 0, 0, .05);
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1.5rem;
   font-weight: 500;
 
   text-wrap: nowrap;
   scroll-snap-align: start;
+  cursor: pointer;
+}
+
+li.catagory.selected {
+  background-color: #0f0f0f;
+  color: white;
 }
 
 .arrow.icon-container.left {
-  /* display: none; */
   position: absolute;
   left: 15px;
 }
@@ -191,6 +197,12 @@ li.catagory {
 }
 
 
+
+@media(max-width: 870px) {
+  .catagories-container {
+    margin-left: 0;
+  }
+}
 
 @media (max-width: 656px) {
   .header {

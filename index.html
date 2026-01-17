@@ -86,7 +86,7 @@
 
 	<div class="catagories-container">
 
-		<div class="arrow icon-container left" onclick="scrollByAmount(-100, 'catagories')">
+		<div class="arrow icon-container left hidden" id="left-arrow-icon" onclick="scrollByAmount(-380, 'catagories')">
 			<div class="arrow icon left">
 				<div class="inside-arrow-container">
 					<div class="inside-arrow-swipe"></div>
@@ -102,20 +102,31 @@
 		</div>
 
 		<ul class="catagories" id="catagories">
-			<li class="catagory">All</li>
+			<li class="catagory selected">All</li>
 			<li class="catagory">Gaming</li>
+			<li class="catagory">Music</li>
+			<li class="catagory">The Elder Scrolls V: Skyrim – Special Edition</li>
 			<li class="catagory">Video game development</li>
 			<li class="catagory">Scripting Language</li>
-			<li class="catagory">Music</li>
 			<li class="catagory">News</li>
 			<li class="catagory">Blenders</li>
 			<li class="catagory">Five Nights at Freddy's</li>
 			<li class="catagory">3D computer graphics</li>
 			<li class="catagory">Computer Programming</li>
 			<li class="catagory">Nintendo</li>
+			<li class="catagory">Hytale</li>
+			<li class="catagory">Podcasts</li>
+			<li class="catagory">Ambient music</li>
+			<li class="catagory">C418</li>
+			<li class="catagory">Music</li>
+			<li class="catagory">Smooth jazz</li>
+			<li class="catagory">Comedy</li>
+			<li class="catagory">Recently uploaded</li>
+			<li class="catagory">Watched</li>
+			<li class="catagory">New to you</li>
 		</ul>
 		
-		<div class="arrow icon-container right" onclick="scrollByAmount(100, 'catagories')">
+		<div class="arrow icon-container right" id="right-arrow-icon" onclick="scrollByAmount(380, 'catagories')">
 			<div class="arrow icon right">
 				<div class="inside-arrow-container">
 					<div class="inside-arrow-swipe"></div>

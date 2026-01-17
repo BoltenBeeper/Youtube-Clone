@@ -99,6 +99,70 @@
 
 /* ^^^ HAMBURGER ^^^ */
 
+/* vvv PLUS vvv */
+
+.plus.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: grey; /* Change this too, self explanitory */
+}
+
+.plus.icon {
+  width: calc(var(--icon-size) * var(--unit));
+  height: calc(var(--icon-size) * var(--unit));
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  position: relative;
+}
+
+.plus .in-icon-piece {
+  position: absolute;
+  
+  width: calc((var(--icon-size) / 1.5) * var(--unit));
+  height: calc((var(--icon-size) / 15) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+  
+  transition: translate ease-in-out .2s, width ease-in-out .2s;
+}
+
+.plus .in-icon-piece.two {
+  transform: rotate(90deg);
+}
+
+.plus .in-icon-piece.three {
+  transform: rotate(90deg);
+}
+
+.plus .in-icon-piece.four {
+}
+
+.plus:hover .in-icon-piece {
+  position: absolute;
+  
+  width: calc((var(--icon-size) / 3) * var(--unit));
+  height: calc((var(--icon-size) / 15) * var(--unit));
+  border-radius: calc(var(--icon-size) * var(--unit));
+  background-color: var(--icon-color);
+  
+  transition: translate ease-in-out .2s, width ease-in-out .2s;
+}
+
+.plus:hover .in-icon-piece.one, .plus:hover .in-icon-piece.two {
+  translate: calc((var(--icon-size) / 5.8) * (var(--unit) * -1)) 0;
+}
+
+.plus:hover .in-icon-piece.three, .plus:hover .in-icon-piece.four {
+  translate: calc((var(--icon-size) / 5.8) * var(--unit)) 0;
+}
+
+/* ^^^ PLUS ^^^ */
+
 /* vvv HOME vvv */
 
 .home.icon {

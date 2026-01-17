@@ -3,7 +3,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 50px;
-  padding: 24px 24px;
+  margin: 120px 0 0 80px;
+  padding: 26px 26px;
 }
 
 .video-preview-container {
@@ -118,4 +119,24 @@
 
 .icon-container img {
   width: 100%;
+}
+
+
+
+@media(max-width: 1250px) {
+  .videos-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 870px) {
+  .videos-container {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 790px) {
+  .videos-container {
+    grid-template-columns: 1fr;
+  }
 }
