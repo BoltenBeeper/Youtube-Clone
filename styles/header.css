@@ -79,7 +79,7 @@
   padding: 0 4px 0 18px;
   margin-left: 72px;
 
-  border: solid 1px #c6c6c6;
+  border: solid 1px #d3d3d3;
   border-right: 0;
   border-radius: 45px 0 0 45px;
   box-shadow: inset 0px 1px 2px #eee; /* rgba(150, 150, 150, .3) */
@@ -94,8 +94,8 @@
   width: 64px;
   height: 42px;
 
-  background-color: rgba(211, 211, 211, .2);
-  border: solid 1px #c6c6c6;
+  background-color: #f8f8f8;
+  border: solid 1px #d3d3d3;
   border-radius: 45px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -151,8 +151,8 @@ li.catagory {
   align-content: center;
 
   height: 35px;
-  padding: 0 12px;
-  margin-right: 12px;
+  padding: 0 13px;
+  margin-right: 14px;
 
   color: #0f0f0f;
   background-color: rgba(0, 0, 0, .05);
@@ -192,7 +192,7 @@ li.catagory.selected {
   height: 120px;
   overflow: visible;
 
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .95);
   backdrop-filter: blur(100px);
 }
 

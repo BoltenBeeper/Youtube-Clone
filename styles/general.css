@@ -7,6 +7,14 @@
   border: 0;
 }
 
+html {
+  scrollbar-color: rgb(96, 96, 96) rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(96, 96, 96);
+}
+
 body {
   background-color: white;
   min-height: 3000px;

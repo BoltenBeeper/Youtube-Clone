@@ -1,0 +1,47 @@
+.side-nav-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 70px;
+  padding: 66px 4px 0;
+
+  /* background-color: lemonchiffon; */
+  z-index: 2000;
+}
+
+.side-nav-bar .buttons-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.side-nav-bar button {
+  height: 81px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.side-nav-bar button:hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.side-nav-bar .nav-icon {
+  width: 26px;
+  height: 26px;
+  margin-inline: auto;
+  border: none;
+}
+
+.nav-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.side-nav-bar p {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+  /* font-weight: 400; */
+}
