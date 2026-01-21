@@ -121,6 +121,13 @@
   width: 100%;
 }
 
+.three-dot.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 20; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1px; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: #0f0f0f; /* Change this too, self explanitory */
+}
+
 .video-stats p {
   margin-top: 2px;
   color: #606060;

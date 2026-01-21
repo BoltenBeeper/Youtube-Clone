@@ -31,9 +31,14 @@
 
 .side-nav-bar .nav-icon {
   width: 24px;
-  height: 24px;
+  aspect-ratio: 1/1;
   margin-inline: auto;
   border: none;
+}
+
+.side-nav-bar .nav-icon.home {
+  width: 36px;
+  aspect-ratio: 1/1;
 }
 
 .nav-icon svg {
@@ -42,7 +47,14 @@
 }
 
 .side-nav-bar p {
-  margin: 7px 0 0;
+  margin: 4px 0 0;
   font-size: 1rem;
   /* font-weight: 400; */
+}
+
+.home.icon {
+  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
+  --icon-size: 36; /* Change this value to change entire icon size scalably (square) */
+  --unit: 1px; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
+  --icon-color: #0f0f0f; /* Change this too, self explanitory */
 }

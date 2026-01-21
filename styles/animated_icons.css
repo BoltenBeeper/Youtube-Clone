@@ -7,13 +7,6 @@
 /* vvv THREE DOTS vvv */
 
 .three-dot.icon {
-  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
-  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
-  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
-  --icon-color: grey; /* Change this too, self explanitory */
-}
-
-.three-dot.icon {
   width: calc(var(--icon-size) * var(--unit));
   height: calc(var(--icon-size) * var(--unit));
   
@@ -166,13 +159,6 @@
 /* vvv HOME vvv */
 
 .home.icon {
-  /*  NOTE: You can move these variables to your main CSS file under what ever specific class you give the icon. Just make sure you give the icon's CONTAINER a unique identifying class and paste these variables under that.*/
-  --icon-size: 18; /* Change this value to change entire icon size scalably (square) */
-  --unit: 1vw; /* Use this to decide what the size of the icon is measured in. (ex. "1%", "1px", 1vw" etc.) */
-  --icon-color: grey; /* Change this too, self explanitory */
-}
-
-.home.icon {
   width: calc(var(--icon-size) * var(--unit));
   height: calc(var(--icon-size) * var(--unit));
   
@@ -243,7 +229,7 @@
 
 .home .in-icon-wall-inner {
   --wall-piece-width: calc(var(--icon-size) / 15);
-  --wall-piece-length: calc(var(--icon-size) / 3.9);
+  --wall-piece-length: calc(var(--icon-size) / 5);
   width: calc(var(--wall-piece-width) * var(--unit));
   height: calc(var(--wall-piece-length) * var(--unit));
   border-radius: calc(var(--icon-size) * var(--unit));
@@ -251,15 +237,15 @@
 }
 
 .home .in-icon-wall-inner.seven {
-  translate: calc(((var(--icon-size) / -7) + var(--wall-piece-width)) * var(--unit)) calc(((var(--icon-size) / 7.6) + (var(--wall-piece-length) / 2)) * var(--unit));
+  translate: calc(((var(--icon-size) / -7) + var(--wall-piece-width)) * var(--unit)) calc(((var(--icon-size) / 6.5) + (var(--wall-piece-length) / 2)) * var(--unit));
 }
 
 .home .in-icon-wall-inner.eight {
-  translate: calc(((var(--icon-size) / 7) + var(--wall-piece-width) * -1) * var(--unit)) calc(((var(--icon-size) / 7.6) + (var(--wall-piece-length) / 2)) * var(--unit));
+  translate: calc(((var(--icon-size) / 7) + var(--wall-piece-width) * -1) * var(--unit)) calc(((var(--icon-size) / 6.5) + (var(--wall-piece-length) / 2)) * var(--unit));
 }
 
 .home .in-icon-floor-inner {
-  --floor-piece-width: calc(var(--icon-size) / 4.8);
+  --floor-piece-width: calc(var(--icon-size) / 5.5);
   --floor-piece-length: calc(var(--icon-size) / 15);
   width: calc(var(--floor-piece-width) * var(--unit));
   height: calc(var(--floor-piece-length) * var(--unit));
@@ -284,7 +270,7 @@
   transition: background-color linear .2s;
 }
 
-.home.icon-container:hover .in-icon-door.ten {
+.side-nav-bar button:hover .in-icon-door.ten {
   background-color: rgb(0, 0, 0, 0);
   transition: background-color linear .2s;
 }
