@@ -1,4 +1,7 @@
-/* Color pallette:
+/* COLOR PALETTE:
+ - YT-black: #0f0f0f
+ - header-transparent: rgba(0, 0, 0, .05)
+ - header-transparent:hover: rgba(0, 0, 0, .1)
  - scrollbar: #606060 */
 
 * {

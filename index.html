@@ -39,7 +39,7 @@
 								fill="#FF0033"></path>
 							<path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
 						</g>
-						<g id="youtube-paths_yt99">
+						<g>
 							<path
 								d="M32.1819 2.10016V18.9002H34.7619V12.9102H35.4519C38.8019 12.9102 40.5619 11.1102 40.5619 7.57016V6.88016C40.5619 3.31016 39.0019 2.10016 35.7219 2.10016H32.1819ZM37.8619 7.63016C37.8619 10.0002 37.1419 11.0802 35.4019 11.0802H34.7619V3.95016H35.4519C37.4219 3.95016 37.8619 4.76016 37.8619 7.13016V7.63016Z">
 							</path>
@@ -69,15 +69,24 @@
 		</div> <!-- End of left-section -->
 
 		<div class="search section">
-			<input class="search-bar" type="text" placeholder="Search">
-			<div class="search-button-container">
-				<!-- <img class="search-button" src="https://cdn.iconscout.com/icon/free/png-256/free-search-icon-svg-download-png-1604561.png" alt="Search"> -->
-				 <svg class="search-button" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
-					<path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path>
-				</svg>
+			<div class="search-bar-container">
+				<form class="search-bar" action="">
+					<input type="text" placeholder="Search">
+				</form>
+				<button class="search-button-container">
+					<div class="search-button-icon-container">
+						<!-- <img class="search-button" src="https://cdn.iconscout.com/icon/free/png-256/free-search-icon-svg-download-png-1604561.png" alt="Search"> -->
+						<svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+							<path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path>
+						</svg>
+					</div>
+				</button>
 			</div>
 			<div class="voice-search-button-container">
-				<img class="voice-search-button" src="images/voice-search-icon.svg" alt="voice search">
+				<!-- <img class="voice-search-button" src="images/voice-search-icon.svg" alt="voice search"> -->
+				 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+					<path d="M18.063 14.5a1 1 0 111.73 1A8.998 8.998 0 0113 19.942V22a1 1 0 11-2 0v-2.058A8.999 8.999 0 014.206 15.5l.866-.5.865-.5a7.002 7.002 0 0012.125 0ZM12 1a5 5 0 015 5v5a5 5 0 01-10 0V6a5 5 0 015-5ZM4.572 14.134a1 1 0 011.365.366l-1.731 1a1 1 0 01.366-1.366ZM12 3a3 3 0 00-3 3v5a3 3 0 106 0V6a3 3 0 00-3-3Z"></path>
+				</svg>
 			</div>
 		</div> <!-- End of search section -->
 
@@ -159,6 +168,7 @@
 				</div>
 				<p>Home</p>
 			</button>
+
 			<button id="home-nav-button">
 				<div class="nav-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -167,6 +177,7 @@
 				</div>
 				<p>Shorts</p>
 			</button>
+
 			<button id="home-nav-button">
 				<div class="nav-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -175,6 +186,7 @@
 				</div>
 				<p>Subscriptions</p>
 			</button>
+			
 			<button id="home-nav-button">
 				<div class="nav-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -213,7 +225,7 @@
 					</div>
 					<div class="video-stats">
 					</div>
-					<!-- <p class="video-stats">766K views &#183; 1 day ago</p> -->
+					<p class="video-stats">766K views &#183; 1 day ago</p>
 				</div>
 				<div class="icon-container">
 					<img src="https://cdn-icons-png.flaticon.com/512/7066/7066144.png" alt="{three dots icon}">
