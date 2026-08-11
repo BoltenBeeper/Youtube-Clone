@@ -1,8 +1,17 @@
 {
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "scripts": {
-    "start": "start_app.js"
+    "start": "start_app.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.5",
+    "vite": "^8.2.0"
   }
 }
