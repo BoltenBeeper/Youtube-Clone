@@ -132,9 +132,6 @@
   transform: rotate(90deg);
 }
 
-.plus .in-icon-piece.four {
-}
-
 .plus:hover .in-icon-piece {
   position: absolute;
   
@@ -270,7 +267,7 @@
   transition: background-color linear .2s;
 }
 
-.side-nav-bar button:hover .in-icon-door.ten {
+.side-bar button:hover .in-icon-door.ten {
   background-color: rgb(0, 0, 0, 0);
   transition: background-color linear .2s;
 }
