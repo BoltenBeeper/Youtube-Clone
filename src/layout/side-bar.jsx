@@ -1,7 +1,8 @@
 import React from 'react'
 
 export function SideBar() {
- return (
+  console.log("Rendering SideBar component.");
+  return (
     <div className="side-bar">
 
       <div className="buttons-container">

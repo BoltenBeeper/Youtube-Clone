@@ -1,6 +1,7 @@
 import React from 'react'
 
 export function NavBar() {
+  console.log("Rendering NavBar component.");
   return (
     <div className="header">
 
@@ -15,7 +16,7 @@ export function NavBar() {
         </div>
 
         <div className="logo-container">
-          {/* <img className="youtube-logo" src="images/Youtube_Logo.png" alt="YOUTUBE"></img> */}
+          {/* <img className="youtube-logo" src="images/youtube-logo.png" alt="YOUTUBE"></img> */}
           <div>
             <svg
               className="youtube-logo"

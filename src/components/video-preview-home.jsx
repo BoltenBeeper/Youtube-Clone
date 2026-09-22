@@ -1,6 +1,7 @@
 import React from 'react'
 
 export function VideoPreviewHome() {
+  console.log("Rendering VideoPreviewHome component.");
   return (
       <div className="video-preview-container">
         <div className="highlight"></div>
